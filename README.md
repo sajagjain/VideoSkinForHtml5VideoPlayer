@@ -1,6 +1,9 @@
 # Video Skin For Html5 VideoPlayer
 This project will generate a video player based on the id of the element you supply and custom options. 
 
+### Nuget Package : 
+> https://www.nuget.org/packages/CustomVideoPlayerJS/1.0.0
+
 You can generate the player by :
  
 > var mpPlayer=mp('app',{src:'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4',height:'450px'})

@@ -1,0 +1,139 @@
+.mediaplayerwrapper{
+    position : relative; 
+    overflow : hidden;
+    background-color: black;
+}
+
+.mediaplayerwrapper-fullscreen{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: unset !important;
+}
+
+.mediaplayerwrapper .mediaplayervideo{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.mediaplayerwrapper .player-controls{
+    bottom:-45px;
+    position : absolute;
+    height : 50px;
+    width : 100%;
+    transition: all .2s;
+}
+
+.mediaplayerwrapper:hover .player-controls > *{
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all .2s;
+}
+
+.mediaplayerwrapper .player-control-left{
+    height : 45px;
+    width : auto;
+    float : left;
+}
+
+.mediaplayerwrapper .player-control-right{
+    height : 45px;
+    width : auto;
+    float : right;
+}
+
+.mediaplayerwrapper:hover .player-controls{
+    bottom:0px;
+}
+
+.mediaplayerwrapper .player-control{
+    padding : 7px;
+    font-size : 22px;
+    cursor : pointer;
+    color:orange;
+    padding:10px 12px;
+}
+
+.mediaplayerwrapper .player-control-playbar{
+    height: 5px;
+    position: relative;
+}
+
+.mediaplayerwrapper .player-control-playbar > *{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+}
+
+.mediaplayerwrapper .player-control-playbar .player-curr-pos{
+    height: 14px;
+    width: 14px;
+    background-color: orange;
+    z-index: 5;
+    margin-top: -5px;
+    visibility: hidden;
+    border-radius: 50%;
+}
+
+.mediaplayerwrapper .player-control-playbar:hover .player-curr-pos{
+    visibility: visible;
+}
+
+.display-inline-flex{
+    display: inline-flex;
+}
+
+/* fonts section */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?eosrfu');
+    src:  url('fonts/icomoon.eot?eosrfu#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?eosrfu') format('truetype'),
+      url('fonts/icomoon.woff?eosrfu') format('woff'),
+      url('fonts/icomoon.svg?eosrfu#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-enlarge:before {
+    content: "\e98b";
+  }
+  .icon-shrink:before {
+    content: "\e98c";
+  }
+  .icon-play:before {
+    content: "\ea1c";
+  }
+  .icon-pause:before {
+    content: "\ea1d";
+  }
+  .icon-volume-high:before {
+    content: "\ea26";
+  }
+  .icon-volume-mute:before {
+    content: "\ea2a";
+  }
+  
+
+
